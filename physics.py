@@ -1,34 +1,54 @@
 def calculate_force(mass, acceleration):
     """
     Calculate force using Newton's second law of motion.
-    F = m * a
+    
+    Parameters:
+    mass (float): Mass in kilograms
+    acceleration (float): Acceleration in meters per second squared
+    
+    Returns:
+    float: Force in newtons
     """
-    force = mass * acceleration
-    return force
+    return mass * acceleration
 
 def calculate_kinetic_energy(mass, velocity):
     """
     Calculate kinetic energy.
-    KE = 0.5 * m * v^2
+    
+    Parameters:
+    mass (float): Mass in kilograms
+    velocity (float): Velocity in meters per second
+    
+    Returns:
+    float: Kinetic energy in joules
     """
-    kinetic_energy = 0.5 * mass * velocity ** 2
-    return kinetic_energy
+    return 0.5 * mass * velocity ** 2
 
 def calculate_potential_energy(mass, height, gravity=9.81):
     """
     Calculate potential energy.
-    PE = m * g * h
+    
+    Parameters:
+    mass (float): Mass in kilograms
+    height (float): Height in meters
+    gravity (float, optional): Acceleration due to gravity in meters per second squared. Default is 9.81.
+    
+    Returns:
+    float: Potential energy in joules
     """
-    potential_energy = mass * gravity * height
-    return potential_energy
+    return mass * gravity * height
 
 def calculate_series_resistance(resistances):
     """
     Calculate total resistance in a series circuit.
-    R_total = R1 + R2 + ... + Rn
+    
+    Parameters:
+    resistances (list of float): List of resistances in ohms
+    
+    Returns:
+    float: Total resistance in ohms
     """
-    total_resistance = sum(resistances)
-    return total_resistance
+    return sum(resistances)
 
 def main():
     # Example usage
