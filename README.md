@@ -1,1 +1,1 @@
-this readme will be updated later
+# How to use it: 
