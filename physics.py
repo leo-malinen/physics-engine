@@ -7,6 +7,10 @@ def calculate_force(mass, acceleration):
         raise ValueError("Mass and acceleration must be non-negative.")
     return mass * acceleration
 
+def JoulesVolts(J):
+    #Simple conversion to convert joules to electronic volts
+    return J*6.242e+18
+
 def calculate_kinetic_energy(mass, velocity):
     # Calculates kinetic energy. 
     #Parameters: mass (float); Mass in kilograms and velocity (float); Velocity in meters per second
