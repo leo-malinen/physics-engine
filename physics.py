@@ -36,6 +36,13 @@ def calculate_series_resistance(resistances):
         raise ValueError("Resistances must be non-negative.")
     return np.sum(resistances)
 
+def calculate_torque(force, distance):
+    # Calculate torque based on force and distance from pivot.
+    #Parameters: force (float); Force in newtons, distance (float); Distance from pivot in meters
+    if force < 0 or distance < 0:
+        raise ValueError("Force and distance must be non-negative.")
+    return force * distance
+
 def main():
     # Example usage with exception handling and logging
     import logging
@@ -52,11 +59,13 @@ def main():
         kinetic_energy = calculate_kinetic_energy(mass, velocity)
         potential_energy = calculate_potential_energy(mass, height)
         total_resistance = calculate_series_resistance(resistances)
+        torque = calculate_torque(force, distance)
 
         logging.info(f"Force: {force} N")
         logging.info(f"Kinetic Energy: {kinetic_energy} J")
         logging.info(f"Potential Energy: {potential_energy} J")
         logging.info(f"Total Resistance in Series Circuit: {total_resistance} Ω")
+        logging.info(f"Torque: {torque} Nm")
     
     except ValueError as e:
         logging.error(e)
