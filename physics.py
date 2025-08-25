@@ -252,7 +252,7 @@ def fluids():
         else:
             print("Invalid option.")
 
-# Calculus tools: here a numerical derivative example
+# Calculus tools if needed: here a numerical derivative example
 def calculus_tools():
     def numerical_derivative(f, x, h=1e-5):
         return (f(x + h) - f(x - h)) / (2 * h)
