@@ -277,8 +277,19 @@ def calculus_tools():
         else:
             print("Invalid option.")
 
+def print_ascii_banner():
+    print(r"""
+  ____  _           _           _       ____      _            _             
+ |  _ \| |__  _   _| |__   ___ | |_ ___|  _ \ ___| | ___   ___| | _____ _ __ 
+ | |_) | '_ \| | | | '_ \ / _ \| __/ _ \ |_) / _ \ |/ _ \ / __| |/ / _ \ '__|
+ |  __/| | | | |_| | |_) | (_) | ||  __/  _ <  __/ | (_) | (__|   <  __/ |   
+ |_|   |_| |_|\__,_|_.__/ \___/ \__\___|_| \_\___|_|\___/ \___|_|\_\___|_|   
+
+    """)
+
 # Main menu loop
 def main():
+    print_ascii_banner()
     while True:
         print("\n=== Physics Calculator ===")
         print("1. Vectors")
